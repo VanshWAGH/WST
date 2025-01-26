@@ -1,6 +1,21 @@
-/* style.css */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #69234a, #0a468f); /* Body background gradient */
+    color: white;
+}
 
-/* Navbar Styles */
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navbar */
 .navbar {
     background-color: black;
     padding: 1rem;
@@ -13,11 +28,6 @@
     align-items: center;
 }
 
-.left-section {
-    display: flex;
-    align-items: center;
-}
-
 .search-bar {
     width: 200px;
     padding: 0.5rem;
@@ -26,20 +36,10 @@
     border-radius: 5px;
 }
 
-.center-section {
-    flex-grow: 1;
-    text-align: center;
-}
-
 .brand-name {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-}
-
-.right-section {
-    display: flex;
-    align-items: center;
 }
 
 button {
@@ -57,44 +57,135 @@ button:hover {
     background-color: gray;
 }
 
-body {
-    margin: 0;
-    padding-top: 4rem; /* Prevent content from being hidden behind the navbar */
-    background: linear-gradient(to bottom, #8b0000, #00008b); /* Gradient background */
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-.content {
+/* Hero Section */
+.hero {
     text-align: center;
-    margin-top: 5rem;
-    padding: 2rem;
+    padding: 5rem 1rem;
+    margin-top: 4rem;
 }
 
-.content h1 {
+.highlight {
+    color: yellow;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.logo {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Why Learn Section */
+.why-learn {
+    background-color: #2c2f48; /* Match the section's background to the screenshot */
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.why-learn h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    background-color: #393b54; /* Slightly darker for card contrast */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.content p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background-color: orange;
+.cta-btn {
+    background-color: #f7a92b;
     color: black;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.cta-button:hover {
-    background-color: darkorange;
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+/* Testimonials Section */
+.testimonials {
+    background-color: #1c1e30;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #2c2f48;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 320px; /* Matches the width shown in the screenshot */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex-shrink: 0; /* Ensures cards don’t shrink on smaller screens */
+}
+
+.card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cta-btn {
+    background-color: #f7a92b;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
 }
