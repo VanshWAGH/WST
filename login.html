@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FreeCodeCamp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: #d1d5db;
+        }
+        .navbar {
+            background: #1a1a2e;
+            color: white;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar w-full py-4 text-center text-xl font-bold shadow-md">freeCodeCamp (🔥)</nav>
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-96 fade-in">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">Log in to freeCodeCamp Learn</h1>
+            </div>
+            
+            <div class="space-y-3">
+                <button class="w-full flex items-center justify-center gap-2 p-3 border rounded-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                    <img src="https://img.icons8.com/color/24/000000/google-logo.png" alt="Google"> Continue with Google
+                </button>
+                <button class="w-full flex items-center justify-center gap-2 p-3 border rounded-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                    <img src="https://img.icons8.com/ios-glyphs/24/000000/github.png" alt="GitHub"> Continue with GitHub
+                </button>
+                <button class="w-full flex items-center justify-center gap-2 p-3 border rounded-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/mac-os.png" alt="Apple"> Continue with Apple
+                </button>
+            </div>
+    
+            <div class="my-4 flex items-center">
+                <hr class="flex-grow border-gray-300"> 
+                <span class="px-3 text-gray-500">OR</span> 
+                <hr class="flex-grow border-gray-300">
+            </div>
+    
+            <form>
+                <label class="block mb-2 text-sm font-medium" for="email">Email address*</label>
+                <input type="email" id="email" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300" placeholder="Enter your email" required>
+                <button type="submit" class="w-full bg-yellow-500 text-white p-3 mt-4 rounded-lg hover:bg-yellow-600 transition-transform transform hover:scale-105">Continue with Email</button>
+            </form>
+    
+            <p class="text-center mt-4 text-sm text-gray-700">Don't have an account yet? <a href="#" class="text-blue-500 font-semibold">Sign up</a></p>
+        </div>
+    </div>
+
+    <script>
+        gsap.to(".fade-in", {opacity: 1, y: 0, duration: 1, ease: "power2.out"});
+    </script>
+</body>
+</html>
