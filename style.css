@@ -189,3 +189,110 @@ button:hover {
 .cta-btn:hover {
     transform: scale(1.05);
 }
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.company-logo {
+    width: 100px;  /* Adjust size as needed */
+    filter: brightness(0.8) opacity(0.7); /* Make logos blend */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.company-logo:hover {
+    filter: brightness(1) opacity(1) drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+    transform: scale(1.1);
+}
+
+.curriculum {
+    background-color: #0a0a23;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.curriculum h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-item:hover {
+    transform: scale(1.02);
+}
+
+.course-number {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1b1b32;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border: 2px solid white;
+}
+
+.course-content {
+    background-color: #1b1b32;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.course-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.course-title {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-item:hover .toggle-icon {
+    transform: translateX(5px);
+}
+
